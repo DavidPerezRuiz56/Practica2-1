@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Listado</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+	
+	<fieldset id="filtro">
+		<legend>Filtro de busqueda</legend>
+		<div><label>Tipo:</label>
+			<select id="seleccion">
+				<option id="medicos">Medicos</option>
+				<option id="pacientes">Pacientes</option>
+			</select>
+		</div>
+		<div><label>DNI: </label><input type="text" id="dni"></div>
+		<div><label>Nombre: </label><input type="text" id="nombre"></div>
+		<div><label>Localidad: </label><input type="text" id="localidad"></div>
+		<div><label>Telefono: </label><input type="text" id="telefono"></div>
+		<div><button id="buscar">Buscar</button></div>
+	</fieldset>
+
+	<table id="tabla" border="1px">
+		<thead>
+			<tr>
+				<th>DNI</th>
+				<th>NOMBRE</th>
+				<th>LOCALIDAD</th>
+				<th>TELEFONO</th>
+			</tr>
+		</thead>
+		<tbody id="cuerpoTabla">
+			
+		</tbody>
+	</table>
+	<div>
+		<input type="button" id="primeraPagina" value="<<">
+		<input type="button" id="paginaAtras" value="<">
+		<input type="text" id="pagina">
+		<input type="button" id="paginaSiguiente" value=">">
+		<input type="button" id="ultimaPagina" value=">>">
+	</div>
+</body>
+</html>
